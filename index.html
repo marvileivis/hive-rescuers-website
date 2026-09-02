@@ -1,22 +1,709 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Hive Rescuers - a whimsical mobile strategy game by FantasyEngine.">
-<title>Hive Rescuers | FantasyEngine</title>
-<style>
-*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial,sans-serif;color:#fff8dc;background:radial-gradient(circle at 50% 15%,rgba(255,196,54,.17),transparent 32rem),linear-gradient(145deg,#26124b,#10234a 55%,#07152e);display:flex;flex-direction:column}
-main{flex:1;display:grid;place-items:center;padding:48px 22px}.card{width:min(760px,100%);text-align:center;padding:54px 34px;border:1px solid rgba(255,211,92,.28);border-radius:28px;background:rgba(10,17,45,.62);box-shadow:0 24px 70px rgba(0,0,0,.28)}
-.bee{font-size:62px}.studio{color:#ffd45e;font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}h1{margin:0;font-size:clamp(42px,8vw,72px);color:#ffd45e}.tag{font-size:20px;line-height:1.6;color:#f4f0ff}.line{width:90px;height:4px;margin:30px auto;border-radius:99px;background:#ffd45e}.desc{max-width:610px;margin:auto;color:#d9dcf1;line-height:1.75}.badge{display:inline-block;margin-top:30px;padding:11px 18px;border-radius:999px;color:#251640;background:#ffd45e;font-weight:700}
-footer{padding:22px;text-align:center;color:#aeb5d3;font-size:13px}a{color:#ffd45e;text-decoration:none}
-</style>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+        name="description"
+        content="Hive Rescuers — Build your swarm. Defend your hive. Outsmart the wasps."
+    />
+
+    <title>Hive Rescuers</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
 </head>
+
+
 <body>
-<main><section class="card">
-<div class="bee">🐝</div><p class="studio">FantasyEngine presents</p><h1>Hive Rescuers</h1>
-<p class="tag">Build your swarm. Defend your hive. Outsmart the wasps.</p><div class="line"></div>
-<p class="desc">Hive Rescuers is a whimsical mobile strategy adventure where brave bees defend their home against dangerous wasps, overcome unusual obstacles, and use unique abilities to turn the tide of battle.</p>
-<span class="badge">Coming to Google Play</span>
-</section></main>
-<footer>&copy; 2026 FantasyEngine &middot; Hive Rescuers<br>Contact: <a href="mailto:hiverescuers@gmail.com">hiverescuers@gmail.com</a></footer>
-</body></html>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <a class="brand" href="#top" aria-label="Hive Rescuers home">
+            <span>Hive Rescuers</span>
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+
+        <nav class="nav" aria-label="Main navigation">
+
+            <a href="#game">Game</a>
+
+            <a href="#swarm">Characters</a>
+
+            <a href="#worlds">Worlds</a>
+
+            <a href="#media">Media</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+
+        <a
+            class="play-btn small"
+            href="https://play.google.com/store/apps/details?id=com.HiveRescuersProductions.HiveRescuers"
+            aria-label="Get Hive Rescuers on Google Play"
+        >
+            Google Play
+        </a>
+
+    </header>
+
+
+
+    <main id="top">
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="hero">
+
+
+            <div
+                class="hero-pattern"
+                aria-hidden="true"
+            ></div>
+
+
+            <!--
+            <div
+                class="hero-art hero-left"
+                aria-hidden="true"
+            >
+
+                <div class="character-card bee-card">
+                    🐝
+                </div>
+
+                <div class="character-card bee-card second">
+                    🐝
+                </div>
+
+                <div class="character-card bee-card third">
+                    🐝
+                </div>
+
+            </div>
+            -->
+
+
+            <div class="hero-copy">
+
+                <div class="eyebrow">
+                    FANTASYENGINE PRESENTS
+                </div>
+
+
+                <!--
+                <h1>Hive Rescuers</h1>
+                -->
+
+
+                <p class="tagline">
+                    Build your swarm. Defend your hive. Outsmart the wasps.
+                </p>
+
+
+                <p class="hero-text">
+
+                    A whimsical mobile strategy adventure filled with
+                    brave bees, evil wasps, strange obstacles, and
+                    chaotic battles.
+
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a
+                        class="play-btn"
+                        href="https://play.google.com/store/apps/details?id=com.HiveRescuersProductions.HiveRescuers"
+                    >
+                        Get it on Google Play
+                    </a>
+
+
+                    <a
+                        class="ghost-btn"
+                        href="#media"
+                    >
+                        Watch Gameplay
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!--
+            <div
+                class="hero-art hero-right"
+                aria-hidden="true"
+            >
+
+                <div class="character-card wasp-card">
+                    🦟
+                </div>
+
+                <div class="character-card wasp-card second">
+                    🦟
+                </div>
+
+                <div class="character-card wasp-card third">
+                    🦟
+                </div>
+
+            </div>
+            -->
+
+
+            <div
+                class="hero-bottom-wave"
+                aria-hidden="true"
+            ></div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             MAIN GAME CARDS
+        ====================================================== -->
+
+        <section
+            class="tile-section"
+            id="game"
+        >
+
+
+            <div class="section-heading">
+
+                <span class="kicker">
+                    SAVE THE HIVE
+                </span>
+
+
+                <h2>
+                    Every battle is different
+                </h2>
+
+
+                <p>
+
+                    Build your team, react to new threats, and complete
+                    unusual objectives across colorful worlds.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="tile-grid">
+
+
+                <!-- BUILD YOUR SWARM -->
+
+                <article class="feature-tile swarm-card">
+
+                    <div class="tile-content">
+
+                        <span>
+                            Meet the heroes
+                        </span>
+
+                        <h3>
+                            Build Your Swarm
+                        </h3>
+
+                        <p>
+                            Choose bees with unique abilities and create
+                            the right team for each battle.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DEFEAT THE WASPS -->
+
+                <article class="feature-tile wasps-card">
+
+                    <div class="tile-content">
+
+                        <span>
+                            Face the enemy
+                        </span>
+
+                        <h3>
+                            Defeat the Wasps
+                        </h3>
+
+                        <p>
+                            Stop bizarre enemies from reaching your queen
+                            and overwhelming the hive.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- UNLOCK NEW WORLDS -->
+
+                <article class="feature-tile worlds-card">
+
+                    <div class="tile-content">
+
+                        <span>
+                            Explore
+                        </span>
+
+                        <h3>
+                            Unlock New Worlds
+                        </h3>
+
+                        <p>
+                            Battle through magical environments filled
+                            with hazards, puzzles, and surprises.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             BEE CHARACTERS
+        ====================================================== -->
+
+        <section
+            class="showcase"
+            id="swarm"
+        >
+
+
+            <div class="showcase-copy">
+
+                <span class="kicker">
+                    MEET YOUR SWARM
+                </span>
+
+
+                <h2>
+                    Small bees. Big personalities.
+                </h2>
+
+
+                <p>
+
+                    Collect a roster of specialists, defenders,
+                    support bees, and unusual heroes.
+
+                    Each one changes how you approach the battlefield.
+
+                </p>
+
+
+                <a
+                    class="text-link"
+                    href="#"
+                >
+                    Discover the bees →
+                </a>
+
+            </div>
+
+
+
+            <div
+                class="character-row"
+                aria-label="Hive Rescuers characters"
+            >
+
+
+                <!-- EXPLORER -->
+
+                <div class="mini-character">
+
+                    <img
+                        src="assets/explorer-bee.png"
+                        alt="Explorer Bee"
+                    >
+
+                    <strong>
+                        Explorer
+                    </strong>
+
+                    <small>
+                        Collects pollen
+                    </small>
+
+                </div>
+
+
+
+                <!-- SOLDIER -->
+
+                <div class="mini-character">
+
+                    <img
+                        src="assets/soldier-bee.png"
+                        alt="Soldier Bee"
+                    >
+
+                    <strong>
+                        Soldier
+                    </strong>
+
+                    <small>
+                        Frontline fighter
+                    </small>
+
+                </div>
+
+
+
+                <!-- PRIESTESS -->
+
+                <div class="mini-character">
+
+                    <img
+                        src="assets/priestess-bee.png"
+                        alt="Priestess Bee"
+                    >
+
+                    <strong>
+                        Priestess
+                    </strong>
+
+                    <small>
+                        Support specialist
+                    </small>
+
+                </div>
+
+
+
+                <!-- NINJA -->
+
+                <div class="mini-character">
+
+                    <img
+                        src="assets/ninja-bee.png"
+                        alt="Ninja Bee"
+                    >
+
+                    <strong>
+                        Chino Bee
+                    </strong>
+
+                    <small>
+                        Fast attacker
+                    </small>
+
+                </div>
+
+
+
+                <!-- COOK -->
+
+                <div class="mini-character">
+
+                    <img
+                        src="assets/cook-bee.png"
+                        alt="Cook Bee"
+                    >
+
+                    <strong>
+                        Cook
+                    </strong>
+
+                    <small>
+                        Throws honey pies
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             OBJECTIVES
+        ====================================================== -->
+
+        <section
+            class="objectives"
+            id="worlds"
+        >
+
+
+            <div class="section-heading light">
+
+                <span class="kicker">
+                    CHAOS AWAITS
+                </span>
+
+
+                <h2>
+                    More than simple tower defense
+                </h2>
+
+            </div>
+
+
+
+            <!-- IMPORTANT:
+                 There is ONE objective-grid.
+                 All three objective cards are direct children.
+            -->
+
+            <div class="objective-grid">
+
+
+                <!-- ROTTEN EGGS -->
+
+                <div class="objective-card">
+
+                    <img
+                        src="assets/rottenEgg.png"
+                        alt="Destroy Rotten Eggs"
+                    >
+
+                    <h3>
+                        Destroy Rotten Eggs
+                    </h3>
+
+                    <p>
+                        Clear dangerous objectives before they
+                        overwhelm the battlefield.
+                    </p>
+
+                </div>
+
+
+
+                <!-- PORTALS -->
+
+                <div class="objective-card">
+
+                    <img
+                        src="assets/portal.png"
+                        alt="Survive Portals"
+                    >
+
+                    <h3>
+                        Survive Portals
+                    </h3>
+
+                    <p>
+                        Enemies can push your bees backward and
+                        completely change the fight.
+                    </p>
+
+                </div>
+
+
+
+                <!-- MACHINES -->
+
+                <div class="objective-card">
+
+                    <img
+                        src="assets/machine.png"
+                        alt="Break the Machines"
+                    >
+
+                    <h3>
+                        Break the Machines
+                    </h3>
+
+                    <p>
+                        Destroy cloning machines and other devices
+                        before the enemy multiplies.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             GAMEPLAY / MEDIA
+        ====================================================== -->
+
+        <section
+            class="media"
+            id="media"
+        >
+      <div class="media-frame">
+
+        <iframe
+            class="gameplay-video"
+            src="https://www.youtube.com/embed/zs3EwplUq7c"
+            title="Hive Rescuers Gameplay Trailer"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    
+    </div>
+
+
+
+            <div class="media-copy">
+
+                <span class="kicker">
+                    SEE IT IN ACTION
+                </span>
+
+
+                <h2>
+                    A cute battlefield can still become complete chaos.
+                </h2>
+
+
+                <p>
+
+                    Deploy your bees, collect resources, counter enemy
+                    abilities, and protect the hive while the battlefield
+                    changes around you.
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FINAL CTA
+        ====================================================== -->
+
+        <section class="cta">
+
+
+            <div>
+
+                <span class="kicker">
+                    READY TO SAVE THE HIVE?
+                </span>
+
+                <h2>
+                    Join the swarm.
+                </h2>
+
+            </div>
+
+
+            <a
+                class="play-btn"
+                href="https://play.google.com/store/apps/details?id=com.HiveRescuersProductions.HiveRescuers"
+            >
+                Get it on Google Play
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer id="contact">
+
+
+        <div class="footer-brand">
+
+            🐝
+
+            <strong>
+                Hive Rescuers
+            </strong>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <a href="privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="mailto:hiverescuers@gmail.com">
+                Contact
+            </a>
+
+            <a href="https://www.instagram.com/hiverescuers/">
+                Instagram
+            </a>
+
+        </div>
+
+
+
+        <p>
+            © 2026 FantasyEngine. All rights reserved.
+        </p>
+
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
